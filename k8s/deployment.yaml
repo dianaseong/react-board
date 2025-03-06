@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: react-board-container
-        image: dianaseong/react-board:eb880bb8e02b102a0c66960d42eacae42f8e2ace
+        image: dianaseong/react-board:v1
         ports:
         - containerPort: 80
