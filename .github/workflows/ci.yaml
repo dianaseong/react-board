@@ -45,7 +45,7 @@ jobs:
       - name: Update Deployment YAML
         env:
           DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-          DOCKER_HUB_REPOSITORY: react-board
+          DOCKER_HUB_REPOSITORY: reactboard
           IMAGE_TAG: ${{ github.sha }}
         run: |
           sed -i "s|image: .*|image: ${DOCKER_HUB_USERNAME}/${DOCKER_HUB_REPOSITORY}:${IMAGE_TAG}|" k8s/deployment.yaml
